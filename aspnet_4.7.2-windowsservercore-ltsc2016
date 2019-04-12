@@ -3,4 +3,3 @@ SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPref
 RUN Add-LocalGroupMember -Group 'Administrators' -Member 'IIS AppPool\DefaultAppPool'
 
 SHELL ["cmd", "/S", "/C"]
-COPY CentralRepository CentralRepository
